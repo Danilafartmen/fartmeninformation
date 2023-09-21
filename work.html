@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Информация</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .container { 
+      max-width: 650px; 
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }<!-- Создание контейнера с фото -->
+    
+    h1 {
+      text-align: center;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    .more-info {
+      display: none;
+    }
+    
+    .show-more-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .show-more-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Привет, меня зовут Галиуллин Даниил</h1>
+    <img src="ava1.jpg" alt="Фото 1">
+    <img src="ava2.jpg" alt = "Фото 2">
+      <p>Краткая информация обо мне.</p>
+      <button class="show-more-btn" onclick="toggleMoreInfo()">Узнать больше информации про меня</button>
+    <p class="more-info"> -> Мне 19 лет<br> -> Учусь в ЮУрГУ(НИУ) на 2 курсе специальности Инфокоммуникационные технологии и системы связи <br> -> Этим летом ездил в лагерь "Олимп", который в корне поменял мой взгляд на работу в IT сфере<br> -> На данный момент стараюсь браться за любые возможности для карьерного и личностного развития как в ВУЗе так и за его пределами <br> -> Очень сильно хочу попасть к вам на обучение   </p>
+  </div>
+
+  <script><!-- верстка кнопки -->
+    function toggleMoreInfo() {
+      var moreInfo = document.querySelector('.more-info');
+      if (moreInfo.style.display === 'none') {
+        moreInfo.style.display = 'block';
+      } else {
+        moreInfo.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
